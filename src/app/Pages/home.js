@@ -45,12 +45,12 @@ export default function Home() {
               </div>
               <div className="mx-auto text-start">
                 <h1 className="text-3xl md:text-6xl leading-none sm:leading-[1.3] font-semibold text-white text-left pr-4 sm:pr-8 lg:pr-20">
-                  Yellowstone Vacation Rentals by Island Time Stays
+                  Yellowstone Vacation Rentals by Island Time Stays.
                 </h1>
                 <p className="text-base md:text-lg font-medium text-white text-left mt-4 pr-4 sm:pr-8 lg:pr-20">
                   Stay in Island Park, Idaho—just minutes from Yellowstone.
                   Enjoy cabins with hot tubs, scenic views, and game rooms
-                  perfect for families and groups
+                  perfect for families and groups.
                 </p>
 
                 <div className="flex flex-col md:flex-row mt-8 gap-3">

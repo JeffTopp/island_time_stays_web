@@ -26,7 +26,16 @@ const Circle = dynamic(
 export default function CustomMap() {
   const [leaflet, setLeaflet] = useState(null);
   const [heartIcon, setHeartIcon] = useState(null);
-  const center = [44.424364, -111.371065];
+
+  // Coordinates for the addresses
+  const stevensonCoords = [44.429733, -111.440849];
+  const sawtelleCoords = [44.523195, -111.329032];
+
+  // Calculate the center point between the two addresses
+  const center = [
+    (stevensonCoords[0] + sawtelleCoords[0]) / 2,
+    (stevensonCoords[1] + sawtelleCoords[1]) / 2,
+  ];
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -71,18 +80,26 @@ export default function CustomMap() {
     <div className="w-full md:max-w-[500px] max-w-full h-full max-h-[700px]">
       <MapContainer
         center={center}
-        zoom={14}
+        zoom={11}
         style={{ height: "100%", width: "100%", borderRadius: "8px" }}
       >
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         <Circle
-          center={center}
-          radius={1000}
+          center={stevensonCoords}
+          radius={500}
           color="#7b7b89"
           fillColor="#7b7b89"
           fillOpacity={0.3}
         />
-        <Marker position={center} icon={heartIcon} />
+        <Circle
+          center={sawtelleCoords}
+          radius={500}
+          color="#7b7b89"
+          fillColor="#7b7b89"
+          fillOpacity={0.3}
+        />
+        <Marker position={stevensonCoords} icon={heartIcon} />
+        <Marker position={sawtelleCoords} icon={heartIcon} />
       </MapContainer>
     </div>
   );
