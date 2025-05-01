@@ -9,7 +9,7 @@ import Navbar from "../../components/navbar";
 import Link from "next/link";
 import Footer from "../../components/footer";
 const images = Array.from(
-  { length: 42 },
+  { length: 45 },
   (_, i) => `/island_time_cabin/${i + 1}.jpeg`
 );
 

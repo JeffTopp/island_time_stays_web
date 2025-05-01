@@ -12,20 +12,20 @@ export default function Attractions() {
     {
       name: "Backcountry Adventures",
       image: "/attractions_island_time_stays/Recreation_Powersports.png",
-      distance: "Just at the doorstep",
-      link: "https://islandparkchamber.org/sites/islandparkchamber.org/files/pdf/island-park-trailmap24.pdf"
+      distance: "At your doorstep",
+      link: "https://islandparkchamber.org/sites/islandparkchamber.org/files/pdf/island-park-trailmap24.pdf",
     },
     {
-      name: "Yellow Stone National Park",
+      name: "Yellowstone National Park",
       image: "/attractions_island_time_stays/Yellowstone.png",
-      distance: "Less than 30 minutes away",  
-      link: "https://www.nps.gov/yell/index.htm"
+      distance: "Less than 30 minutes away",
+      link: "https://www.nps.gov/yell/index.htm",
     },
     {
       name: "Wilderness Experiences",
       image: "/attractions_island_time_stays/fly_fishing.png",
-      distance: "Just at the doorstep",
-      link: "https://islandparkchamber.org/play"
+      distance: "At your doorstep",
+      link: "https://islandparkchamber.org/play",
     },
   ];
 
@@ -107,7 +107,7 @@ export default function Attractions() {
                 </div>
                 <Link
                   href={place.link}
-                  className="absolute flex justify-between items-center bg-white top-3 w-96 max-w-[auto] left-1/2 transform -translate-x-1/2 py-3 px-6 rounded-full text-start shadow-md z-20"
+                  className="absolute flex justify-between items-center bg-white top-3 w-[90%] sm:w-96 left-1/2 transform -translate-x-1/2 py-3 px-6 rounded-full text-start shadow-md z-20"
                 >
                   <div>
                     <h4

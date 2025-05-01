@@ -11,7 +11,7 @@ export default function About() {
       <div className="max-w-xl relative mx-auto mb-40 bg-white rounded-lg justify-center px-9 py-9 items-start gap-9 shadow-lg">
         {/* Image Container */}
         <div className="w-full flex-col">
-          <div className="h-40 w-40 absolute right-[-80px] top-[-80px] rounded-full overflow-hidden p-2 bg-primary">
+          <div className="hidden lg:block h-40 w-40 absolute right-[-80px] top-[-80px] rounded-full overflow-hidden p-2 bg-primary">
             <Image
               src="/about-host.png"
               alt="About Us"

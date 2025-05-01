@@ -42,6 +42,9 @@ export default function Properties() {
         <div className="flex flex-col justify-center gap-10 w-auto mt-14 mx-auto">
           <Link href="/properties/1" className="relative property-card">
             <div className="card text-start relative">
+              <h4 className="block lg:hidden px-4 card-title text-2xl font-medium text-black">
+                Island Time Cabin
+              </h4>
               <div className="flex flex-col lg:flex-row w-full justify-center items-center gap-6 p-4">
                 <div className="flex flex-col w-full lg:w-auto gap-4 text-center items-center justify-center">
                   <Image
@@ -53,7 +56,7 @@ export default function Properties() {
                     alt="Property 1"
                     loading="lazy"
                   />
-                  <div className="flex gap-3 mb-3 w-full lg:w-auto">
+                  <div className="flex lg:flex-row flex-col gap-3 mb-3 w-full lg:w-auto">
                     <Image
                       src="/island_time_cabin/9.jpeg"
                       className="rounded-lg w-full object-cover"
@@ -75,7 +78,7 @@ export default function Properties() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start w-full lg:w-1/4">
-                  <h4 className="card-title text-2xl font-medium text-black">
+                  <h4 className="hidden lg:block card-title text-2xl font-medium text-black">
                     Island Time Cabin
                   </h4>
                   <p className="text-slate-500 mt-2">
@@ -95,6 +98,9 @@ export default function Properties() {
           </Link>
           <Link href="/properties/2" className="relative property-card">
             <div className="card text-start relative">
+              <h4 className="block lg:hidden px-4 card-title text-2xl font-medium text-black">
+                Island Time Retreat
+              </h4>
               <div className="flex flex-col lg:flex-row w-full lg:w-auto justify-center items-center gap-6 p-4">
                 <div className="flex flex-col gap-4 w-full lg:w-auto">
                   <Image
@@ -106,10 +112,10 @@ export default function Properties() {
                     alt="Property 2"
                     loading="lazy"
                   />
-                  <div className="flex gap-3 mb-3">
+                  <div className="flex lg:flex-row flex-col gap-3 mb-3 w-full lg:w-auto">
                     <Image
                       src="/island_time_retreat/51.jpeg"
-                      className="rounded-lg w-full object-cover"
+                      className="rounded-lg w-full lg:w-auto object-cover"
                       style={{ height: "auto", maxHeight: "150px" }}
                       width={600}
                       height={500}
@@ -118,7 +124,7 @@ export default function Properties() {
                     />
                     <Image
                       src="/island_time_retreat/24.jpeg"
-                      className="rounded-lg w-full object-cover"
+                      className="rounded-lg w-full lg:w-auto object-cover"
                       style={{ height: "auto", maxHeight: "150px" }}
                       width={600}
                       height={500}
@@ -128,7 +134,7 @@ export default function Properties() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start w-full lg:w-1/4">
-                  <h4 className="card-title text-2xl font-medium text-black">
+                  <h4 className="hidden lg:block card-title text-2xl font-medium text-black">
                     Island Time Retreat
                   </h4>
                   <p className="text-slate-500 mt-2">

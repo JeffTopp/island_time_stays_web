@@ -136,7 +136,7 @@ export default function Page() {
             ))}
           </Swiper>
           <h1 className="text-2xl font-medium mt-5 block md:hidden">
-            Splendid 4 Bed/2.5 Bath - Near Speedway
+            Island Time Retreat
           </h1>
         </div>
       </div>

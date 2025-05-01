@@ -79,7 +79,7 @@ export default function Reviews() {
         </p>
       </div>
 
-      <div className="mt-11 px-10 cursor-pointer flex flex-col gap-10">
+      <div className="mt-11 px-0 lg:px-10 cursor-pointer flex flex-col gap-10">
         {[0, 1].map((index) => (
           <Swiper
             key={index}
