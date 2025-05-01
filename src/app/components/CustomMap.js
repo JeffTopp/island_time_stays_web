@@ -28,8 +28,8 @@ export default function CustomMap() {
   const [heartIcon, setHeartIcon] = useState(null);
 
   // Coordinates for the addresses
-  const stevensonCoords = [44.429733, -111.440849];
-  const sawtelleCoords = [44.523195, -111.329032];
+  const stevensonCoords = [44.4942905, -111.3300188, 20.63];
+  const sawtelleCoords = [44.5616719, -111.3564751];
 
   // Calculate the center point between the two addresses
   const center = [

@@ -15,7 +15,8 @@ export default function Home() {
         id="home"
         data-aos="fade-up"
         style={{
-          backgroundImage: "url('/island_time_retreat/37.jpeg')",
+          backgroundImage:
+            "url('/island_time_cabin/yellowstone-geo-thermal-email.jpg')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -33,7 +34,7 @@ export default function Home() {
                     className="rounded-lg w-full h-40"
                   />
                   <img
-                    src="/home2.png"
+                    src="/island_time_retreat/37.jpeg"
                     alt="image2"
                     className="rounded-lg w-full h-40"
                   />
