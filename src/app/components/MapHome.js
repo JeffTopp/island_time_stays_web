@@ -73,7 +73,9 @@ const MapHome = () => {
     });
   }, []);
 
-  if (!isMounted || !leaflet || !heartIcon) return null; // Prevent SSR errors
+  const isReady = isMounted && leaflet && heartIcon;
+
+  if (!isReady) return null;
 
   return (
     <MapContainer

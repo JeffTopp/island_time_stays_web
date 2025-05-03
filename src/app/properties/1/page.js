@@ -38,7 +38,7 @@ export default function Page() {
         <span>Back</span>
       </Link>
       {/* /* Booking Iframe and Swiper Carousel */}
-      <div className="flex flex-row justify-between items-center px-6 md:px-16 lg:px-36 mb-4">
+      <div className="flex flex-row justify-between items-center mb-0 md:mb-4 my-4 md:my-0 px-6 md:px-16 lg:px-36">
         <h1 className="hidden md:block text-3xl font-semibold">
           Island Time Cabin
         </h1>
@@ -83,6 +83,9 @@ export default function Page() {
           </svg>
         </Link>
       </div>
+      <h1 className="px-6 md:px-16 lg:px-36 text-2xl font-semibold my-5 block md:hidden">
+        Island Time Cabin
+      </h1>
       <p className="px-6 md:px-16 lg:px-36 text-slate-500">
         5BR/3.5BA cabin just 30 minutes from Yellowstone! Sleeps 16 with 1 King,
         6 Queens, and 2 Twins. Features include a game room with a pool table,
@@ -133,9 +136,6 @@ export default function Page() {
               </SwiperSlide>
             ))}
           </Swiper>
-          <h1 className="text-2xl font-medium mt-5 block md:hidden">
-            Island Time Cabin
-          </h1>
         </div>
       </div>
       <Footer />

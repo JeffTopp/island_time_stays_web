@@ -9,9 +9,8 @@ export default function About() {
       id="about"
     >
       <div className="max-w-xl relative mx-auto mb-40 bg-white rounded-lg justify-center px-9 py-9 items-start gap-9 shadow-lg">
-        {/* Image Container */}
-        <div className="w-full flex-col">
-          <div className="hidden lg:block h-40 w-40 absolute right-[-80px] top-[-80px] rounded-full overflow-hidden p-2 bg-primary">
+        <div className="w-full flex-col relative">
+          <div className="h-32 w-32 md:h-40 md:w-40 mb-11 md:mb-0 relative text-center right-0 md:right-[-80px] md:absolute top-0 md:top-[-80px] rounded-full overflow-hidden p-2 bg-primary mx-auto md:mx-0">
             <Image
               src="/about-host.png"
               alt="About Us"

@@ -44,7 +44,7 @@ export default function Page() {
       </Link>
 
       {/* Booking Iframe and Swiper Carousel */}
-      <div className="flex flex-row justify-between items-center px-6 md:px-16 lg:px-36 mb-4">
+      <div className="flex flex-row justify-between items-center mb-0 md:mb-4 my-4 md:my-0 px-6 md:px-16 lg:px-36">
         <h1 className="hidden md:block text-3xl font-semibold">
           Island Time Retreat
         </h1>
@@ -87,6 +87,9 @@ export default function Page() {
           </svg>
         </Link>
       </div>
+      <h1 className="px-6 md:px-16 lg:px-36 text-2xl font-semibold my-5 block md:hidden">
+        Island Time Retreat
+      </h1>
       <p className="px-6 md:px-16 lg:px-36 text-slate-500">
         Spacious 4BR/3BA cabin in Island Park, sleeping up to 14 guests. Just 25
         minutes from Yellowstone, with a private hot tub, fire pit, and stunning
@@ -135,9 +138,6 @@ export default function Page() {
               </SwiperSlide>
             ))}
           </Swiper>
-          <h1 className="text-2xl font-medium mt-5 block md:hidden">
-            Island Time Retreat
-          </h1>
         </div>
       </div>
 
