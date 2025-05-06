@@ -33,7 +33,7 @@ export default function Home() {
         <div className="overlay p-0 flex justify-center items-center">
           <div className="rounded-2xl md:h-[100vh] p-4 w-full max-w-screen-xl">
             <Navbar />
-            <div className="flex flex-col xl:flex-row gap-5 w-full items-center md:items-start justify-center px-5 md:px-23 mt-18 md:mt-24">
+            <div className="flex flex-col xl:flex-row gap-5 w-full items-center md:items-start justify-center px-5 md:px-16 mt-15">
               <div className="hidden xl:block me-4" id="graphics">
                 {showDelayedContent && (
                   <div className="flex gap-3 mb-8">

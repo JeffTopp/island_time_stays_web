@@ -58,7 +58,7 @@ export default function Properties() {
                   />
                   <div className="flex lg:flex-row flex-col gap-3 mb-3 w-full lg:w-auto">
                     <Image
-                      src="/island_time_cabin/9.jpeg"
+                      src="/island_time_cabin/34.jpeg"
                       className="rounded-lg w-full object-cover"
                       style={{ height: "auto", maxHeight: "150px" }}
                       width={600}
@@ -67,7 +67,7 @@ export default function Properties() {
                       loading="lazy"
                     />
                     <Image
-                      src="/island_time_cabin/19.jpeg"
+                      src="/island_time_cabin/22.jpeg"
                       className="rounded-lg w-full object-cover"
                       style={{ height: "auto", maxHeight: "150px" }}
                       width={600}
