@@ -17,9 +17,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="flex items-center">
       <section
-        className="relative bg-cover bg-center"
+        className="relative bg-cover bg-center w-full"
         id="home"
         data-aos="fade-up"
         style={{
@@ -30,8 +30,8 @@ export default function Home() {
           backgroundPosition: "center",
         }}
       >
-        <div className="overlay p-0">
-          <div className="rounded-2xl md:h-[100vh] p-4">
+        <div className="overlay p-0 flex justify-center items-center">
+          <div className="rounded-2xl md:h-[100vh] p-4 w-full max-w-screen-xl">
             <Navbar />
             <div className="flex flex-col xl:flex-row gap-5 w-full items-center md:items-start justify-center px-5 md:px-23 mt-18 md:mt-24">
               <div className="hidden xl:block me-4" id="graphics">
@@ -57,24 +57,24 @@ export default function Home() {
 
               {showDelayedContent && (
                 <div className="mx-auto text-start">
-                  <h1 className="text-3xl md:text-6xl leading-none sm:leading-[1.3] font-semibold text-white text-left pr-4 sm:pr-8 lg:pr-20">
+                  <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-5xl leading-none sm:leading-[1.3] w-full lg:w-11/12 font-semibold text-white text-left pr-4 sm:pr-8 lg:pr-20">
                     Yellowstone Vacation Rentals by Island Time Stays.
                   </h1>
-                  <p className="text-base md:text-lg font-medium text-white text-left mt-4 pr-4 sm:pr-8 lg:pr-20">
+                  <p className="text-sm sm:text-base md:text-lg font-medium text-white text-left mt-4 pr-4 sm:pr-8 lg:pr-20 w-full lg:w-11/12">
                     Stay in Island Park, Idaho—just minutes from Yellowstone
                     National Park. Enjoy cabins with hot tubs, scenic views, and
                     game rooms perfect for families and groups.
                   </p>
-                  <div className="flex flex-col md:flex-row mt-8 gap-3">
+                  <div className="flex flex-col md:flex-row mt-8 gap-3 justify-start">
                     <a
                       href="#properties"
-                      className="btn btn-primary rounded-full px-8 py-4 text-center"
+                      className="btn btn-primary rounded-full px-8 py-4 text-center text-sm sm:text-base"
                     >
                       Book your stay
                     </a>
                     <a
                       href="#contact"
-                      className="btn btn-white rounded-full px-8 py-4 text-center justify-center flex"
+                      className="btn btn-white rounded-full px-8 py-4 text-center justify-center flex text-sm sm:text-base"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

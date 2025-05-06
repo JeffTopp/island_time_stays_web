@@ -33,10 +33,10 @@ const Navbar = () => {
       setActiveLink(currentSection);
     };
 
-    if (pathname.startsWith("/properties/")) {
-      setActiveLink("#properties");
-    } else {
+    if (pathname === "/") {
       window.addEventListener("scroll", handleScroll);
+    } else {
+      setActiveLink("/"); // Default to home for non-home pages
     }
 
     return () => {
@@ -51,20 +51,24 @@ const Navbar = () => {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    setIsOpen(false);
+    document.body.style.overflow = "auto";
+  }, [pathname]);
+
   const handleLinkClick = (href) => {
     setActiveLink(href);
     setIsOpen(false);
   };
 
-  const getCorrectHref = (hash) =>
-    pathname.startsWith("/properties/") ? `/${hash}` : hash;
+  // Always return "/#section" when not on home
+  const getCorrectHref = (hash) => (pathname === "/" ? hash : `/${hash}`);
 
   return (
     <nav className="flex w-full bg-white justify-between items-center px-5 py-4 rounded-full">
       <Link href="/">
         <Image
           src="/logo.png"
-          className=""
           alt="Logo"
           height={150}
           width={150}
@@ -111,7 +115,7 @@ const Navbar = () => {
       <div className="hidden xl:flex items-center rounded-full py-2 px-2 gap-4">
         {[
           { href: "/", label: "Home" },
-          { href: "#properties", label: "Properties" },
+          { href: getCorrectHref("#properties"), label: "Properties" },
           { href: getCorrectHref("#attractions"), label: "Attractions" },
           { href: getCorrectHref("#about"), label: "About Us" },
           { href: getCorrectHref("#contact"), label: "Contact" },
@@ -129,12 +133,12 @@ const Navbar = () => {
         ))}
       </div>
 
-      <a
+      <Link
         className="hidden xl:block btn btn-primary rounded-full px-8 py-3"
-        href="#properties"
+        href={getCorrectHref("#properties")}
       >
         Book your stay
-      </a>
+      </Link>
 
       <div
         className={`fixed top-0 left-0 h-svh w-64 bg-white shadow-lg transform ${
@@ -163,7 +167,7 @@ const Navbar = () => {
         <div className="flex flex-col items-start p-6 gap-4 mt-12">
           {[
             { href: "/", label: "Home" },
-            { href: "#properties", label: "Properties" },
+            { href: getCorrectHref("#properties"), label: "Properties" },
             { href: getCorrectHref("#attractions"), label: "Attractions" },
             { href: getCorrectHref("#about"), label: "About Us" },
             { href: getCorrectHref("#contact"), label: "Contact" },
@@ -177,12 +181,12 @@ const Navbar = () => {
               {item.label}
             </Link>
           ))}
-          <a
+          <Link
             className="btn btn-primary rounded-full px-6 py-2 mt-2 w-full text-center"
-            href="#properties"
+            href={getCorrectHref("#properties")}
           >
             Book your stay
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
