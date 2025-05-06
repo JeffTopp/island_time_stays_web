@@ -136,6 +136,7 @@ const Navbar = () => {
       <Link
         className="hidden xl:block btn btn-primary rounded-full px-8 py-3"
         href={getCorrectHref("#properties")}
+        onClick={() => handleLinkClick(getCorrectHref("#properties"))}
       >
         Book your stay
       </Link>
@@ -184,6 +185,7 @@ const Navbar = () => {
           <Link
             className="btn btn-primary rounded-full px-6 py-2 mt-2 w-full text-center"
             href={getCorrectHref("#properties")}
+            onClick={() => handleLinkClick(getCorrectHref("#properties"))}
           >
             Book your stay
           </Link>
